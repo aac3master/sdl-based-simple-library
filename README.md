@@ -13,3 +13,5 @@ Warn.!This is for gcc! Use internet tutorial for anoyher ide or compiler!<br>
 All done. <br> 
 Now create file and copy code in it from example.cpp from this github page! <br> 
 For vs just set up sdl (for vs), create project, do step 4 for code blocks and then set up sdl image (also for vs) <br> 
+Demo (yt):
+https://www.youtube.com/watch?v=pYf4jZuNeGY
