@@ -12,7 +12,7 @@ class Sprite //Main class in all lib! (just image)
         SDL_Texture* texture = NULL;
         void UpdateAll();
         void Draw();
-        void Sprite::SetTexture();
+        void SetTexture();
         SDL_Renderer* where_draw = NULL;
         int x = 0;
         int y = 0;
@@ -27,7 +27,7 @@ class Sprite //Main class in all lib! (just image)
 };
 void Sprite::SetTexture()
 {
-    SDL_Texture* Sprite::loadTexture(Sprite::texture_path);
+    Sprite::loadTexture(Sprite::texture_path);
 }
 
 SDL_Texture* Sprite::loadTexture(string path) //XstolenX recreated from lazyfoo.net :)
