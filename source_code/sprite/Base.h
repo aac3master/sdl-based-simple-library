@@ -12,7 +12,7 @@ class Sprite //Main class in all lib! (just image)
         SDL_Texture* texture = NULL;
         void UpdateAll();
         void Draw();
-        void Sprite::SetTexture()
+        void Sprite::SetTexture();
         SDL_Renderer* where_draw = NULL;
         int x = 0;
         int y = 0;
