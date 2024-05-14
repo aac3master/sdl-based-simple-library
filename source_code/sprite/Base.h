@@ -12,18 +12,23 @@ class Sprite //Main class in all lib! (just image)
         SDL_Texture* texture = NULL;
         void UpdateAll();
         void Draw();
+        void Sprite::SetTexture()
         SDL_Renderer* where_draw = NULL;
         int x = 0;
         int y = 0;
         int sx = 100;
         int sy = 100;
         int angel = 0;
+        ~Sprite();
 
     private:
         SDL_Texture* loadTexture(string path);
 
 };
-
+void Sprite::SetTexture()
+{
+    SDL_Texture* Sprite::loadTexture(Sprite::texture_path);
+}
 
 SDL_Texture* Sprite::loadTexture(string path) //XstolenX recreated from lazyfoo.net :)
 {
@@ -69,7 +74,7 @@ void Sprite::UpdateAll()
     }
     else
     {
-        Sprite::texture = Sprite::loadTexture(Sprite::texture_path);
+
     }
 }
 
@@ -95,4 +100,8 @@ void Sprite::Draw()
 
 }
 
+Sprite::~Sprite()
+{
+
+}
 
