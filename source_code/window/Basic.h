@@ -2,11 +2,11 @@
 #include <string>
 #include <iostream>
 //#include <SDL.h>
-
-SDL_Window* CreateWindow(int sx, int sy)//Why not class? IDK. It was written before sprite.
+using namespace std;
+SDL_Window* CreateWindow(int sx, int sy, char* name = "simple programm")//Why not class? IDK. It was written before sprite.
 {
     SDL_Window* window = NULL;
-    window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, sx, sy, SDL_WINDOW_SHOWN );
+    window = SDL_CreateWindow(name, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, sx, sy, SDL_WINDOW_SHOWN );
 
     if( window == NULL )
     {
@@ -27,6 +27,7 @@ void UpdateTick(SDL_Window* window)//Anti white screen TM
 
 void UpdateRenderer(SDL_Renderer* Renderer)//Just clear renderer result
 {
+    SDL_SetRenderDrawColor(Renderer, 0x00, 0x00, 0x00, 0x00);
     SDL_RenderClear(Renderer);
 
 }
