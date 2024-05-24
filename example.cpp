@@ -25,7 +25,7 @@ int main( int argc, char * argv[] ) //For user: add here quit bool to control wh
     my_sprite.SetTexture();
     my_sprite.x = 500;//set x pos (also can be y for hight), in example making sprite be almost in center
     my_sprite.sx = 100;//sets x size (sx = size x, sy = size y) in pixels (Warning! Sprite will render 100x100 by default! If you have sprite (image) with another size, please set sx and sy like you image size!!!)
-    my_sprite.angel = 50;// angel
+    my_sprite.angle = 50;// angle
 
 
     my_sprite2.texture_path = "smile.png";//adding texture (use .SetTexture() to commit changes!!!)
@@ -34,7 +34,7 @@ int main( int argc, char * argv[] ) //For user: add here quit bool to control wh
     my_sprite2.x = 200;//
     my_sprite2.y = 600;
     my_sprite2.sx = 300;//
-    my_sprite2.angel = -50;//
+    my_sprite2.angle = -50;//
 
     Rect my_rect;
     my_rect.where_draw = my_renderer;
