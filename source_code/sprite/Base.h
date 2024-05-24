@@ -17,7 +17,7 @@ class Sprite //Main class in all lib! (just image)
         int y = 0;
         int sx = 100;
         int sy = 100;
-        int angel = 0;
+        int angle = 0;
 
     private:
         SDL_Texture* loadTexture(string path);
@@ -90,9 +90,7 @@ void Sprite::Draw()
     {
         SDL_Rect sprite_rect = {Sprite::x, Sprite::y, Sprite::sx, Sprite::sy};
         //SDL_BlitScaled( Sprite::texture, NULL, Sprite::surface_where_draw, &sprite_rect);
-        SDL_RenderCopyEx(Sprite::where_draw, Sprite::texture, NULL, &sprite_rect, Sprite::angel, NULL, SDL_FLIP_NONE);//copyex gives more functions than blit
+        SDL_RenderCopyEx(Sprite::where_draw, Sprite::texture, NULL, &sprite_rect, Sprite::angle, NULL, SDL_FLIP_NONE);//copyex gives more functions than blit
     }
 
 }
-
-
