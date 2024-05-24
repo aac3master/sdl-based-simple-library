@@ -5,6 +5,7 @@
 #include "source_code/lib_main/Init.h"
 #include "source_code/window/Basic.h"
 #include "source_code/sprite/Base.h"
+#include "source_code/shapes/Base.h"
 
 SDL_Window* my_window = NULL;//Sets window var
 
@@ -35,6 +36,9 @@ int main( int argc, char * argv[] ) //For user: add here quit bool to control wh
     my_sprite2.sx = 300;//
     my_sprite2.angel = -50;//
 
+    Rect my_rect;
+    my_rect.where_draw = my_renderer;
+
 
 
     while (true)//Simple game loop! (while is part of c++)
@@ -44,6 +48,7 @@ int main( int argc, char * argv[] ) //For user: add here quit bool to control wh
         UpdateRenderer(my_renderer);//Warning! this clears screen! put it before draw!(ONLY)
         my_sprite.Draw();//Not actually. You still need to RenderFromRenderer
         my_sprite2.Draw();//
+        my_rect.Draw();
         RenderFromRenderer(my_renderer);//put after draw to commit changes on screen!
 
 
