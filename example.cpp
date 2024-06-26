@@ -4,6 +4,7 @@
 #include <SDL.h> //required for lib.
 #include "source_code/lib_main/Init.h"
 #include "source_code/window/Basic.h"
+#include "source_code/window/Mouse.h"
 #include "source_code/sprite/Base.h"
 #include "source_code/shapes/Base.h"
 
@@ -40,7 +41,7 @@ int main( int argc, char * argv[] ) //For user: add here quit bool to control wh
     my_rect.where_draw = my_renderer;
 
 
-
+    SetCursorFromImage("cursor_with_shadow.png");// Use right pos image ("point" of your cursor should to start from left upper corner)!!!
     while (true)//Simple game loop! (while is part of c++)
     {
         //my_sprite.sx++;//funny o:
@@ -50,7 +51,7 @@ int main( int argc, char * argv[] ) //For user: add here quit bool to control wh
         my_sprite2.Draw();//
         my_rect.Draw();
         RenderFromRenderer(my_renderer);//put after draw to commit changes on screen!
-
+        SDL_Delay(7);//time before render new frame (less = faster screen update but more gpu usage)
 
     }//All code after this line will be executed when while will stop (i recomend to add "quit" bool into your app/game)
     return 1;//while blocks all code here (after while)!
