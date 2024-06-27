@@ -9,6 +9,7 @@ Code blocks (gcc): <br>
 5.Set up sdl image: go to Project>Properties>Project's build options> <br> 
 5.1.Go to search dir. and add: source_code\sprite\SDL_IMAGE\include\SDL2 ('source_code' dir. is dir. from step 4 ) <br> 
 5.2.Go to Linker settings and add:-lSDL2_image <br>
+(***DONT FORGET TO PUT ALL DLLS AT OUTPUT FOLDER!!!***)<br>
 Warn.!This is for gcc! Use internet tutorial for another ide or compiler!<br>
 All done. <br> 
 Now create file and copy code in it from example.cpp from this github page! <br> 
