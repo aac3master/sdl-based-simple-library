@@ -15,4 +15,6 @@ All done. <br>
 Now create file and copy code in it from example.cpp from this github page! <br> 
 For vs just set up sdl (for vs), create project, do step 4 for code blocks and then set up sdl image (also for vs) <br> 
 Demo on youtube (old):
-https://www.youtube.com/watch?v=pYf4jZuNeGY
+https://www.youtube.com/watch?v=pYf4jZuNeGY <br>
+Warning: <br>
+Project deprecated. New lib will be made soon
