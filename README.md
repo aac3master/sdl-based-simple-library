@@ -17,4 +17,4 @@ For vs just set up sdl (for vs), create project, do step 4 for code blocks and t
 Demo on youtube (old):
 https://www.youtube.com/watch?v=pYf4jZuNeGY <br>
 Warning: <br>
-Project deprecated. New lib will be made soon
+Project deprecated. New lib avaible
