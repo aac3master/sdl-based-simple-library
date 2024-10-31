@@ -17,5 +17,5 @@ For vs just set up sdl (for vs), create project, do step 4 for code blocks and t
 Demo on youtube (old):
 https://www.youtube.com/watch?v=pYf4jZuNeGY <br>
 Warning: <br>
-<h2>Project deprecated. New lib avaible <h2\> <br>
+<h2>Project deprecated. New lib available <h2\> <br>
 <h1>https://github.com/aac3master/SimpleDraw</h1>
